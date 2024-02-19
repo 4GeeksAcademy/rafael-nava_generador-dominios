@@ -1,1 +1,39 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin: 0;
+  overflow: hidden; /* Evita el desplazamiento vertical cuando se aplica el desenfoque */
+  position: relative; /* Permite que el pseudo-elemento esté posicionado en relación con el cuerpo */
+}
+
+body::before {
+  content: "";
+  background-image: url(https://www.ecommerceefectivo.com/wp-content/uploads/2014/09/Como-elegir-un-buen-nombre-de-dominio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(15px); /* Ajusta el valor según tu preferencia de desenfoque */
+  position: fixed; /* Fija el pseudo-elemento en la ventana gráfica */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del cuerpo */
+}
+
+.centrar {
+  margin-top: 12%;
+  margin-right: 3%;
+}
+
+.este {
+  height: 10em;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 50%;
+  border: 1px solid;
+  border-color: aliceblue;
+}
+
+.caja {
+  justify-content: space-around;
+}
